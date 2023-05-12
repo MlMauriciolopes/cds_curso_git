@@ -1,5 +1,6 @@
 import streamlit as st
 from src.extraction import load_data
+import src.answers as asw
 
 st.set_page_config(layout='wide')
 
@@ -37,8 +38,8 @@ def create_dataframe_section(df):
 
 def create_answers_section(df):
     st.title("Main Questions Answers")
-
     st.header("First Round")
+
     st.subheader("How many bikes are being sold by their owners and how many bikes are being sold by distributors?")
 
     st.subheader("How many bikes are being sold are bikes from a unique owner?")
